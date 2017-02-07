@@ -23,6 +23,12 @@ module.exports = {
 		src: 'images/**',
 		cwd: dev,
 		dest: build + '/images'
+	},
+
+	riot: {
+		src: 'tags/*.tag',
+		cwd: dev,
+		dest: build
 	}
 
 };

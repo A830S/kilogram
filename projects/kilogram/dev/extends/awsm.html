@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans%7CPT+Serif:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
+    <style type="text/css">
+        {% include "styles.css" %}
+    </style>
+    <!--[if (gte mso 9)|(IE)]>
+    <style type="text/css">
+        table { border-collapse: collapse; }
+        .button { padding:0 !important; }
+    </style>
+    <![endif]-->
+</head>
+
+<body>
+    <div>
+        {% block content %}{% endblock %}
+    </div>
+</body>
+
+</html>

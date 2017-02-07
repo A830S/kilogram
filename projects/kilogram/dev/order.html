@@ -1,0 +1,86 @@
+{% extends "extends/awsm.html" %} {% set preheader = 'To complete your order, please <a href="#">click here</a>' %} {% block content %}
+<wrapper size="600">
+    {% include "partials/header.html" %}
+    <row class="content">
+        <column>
+            <p class="preheader">{{ preheader }}</p>
+            <h1 style="text-align:center;">Dear Gregory Comstock!</h1>
+            <p style="text-align:center;">Please, complete your order. We are sorry, but your order placed on <b>2016-07-10 02:59:34</b> is still <b>INCOMPLETE</b>.</p>
+            <p style="text-align:center;">Please, use <a href="#" target="_blank"><span>this link</span></a> to complete your order now so that we can ship it to you right away</p>
+            {% include "partials/offer.html" %}
+            <br/><br/>
+            <table class="table invoice" width="100%">
+                <tbody>
+                    <tr>
+                        <td valign="top">
+                            <b>Your Order ID:</b>
+                        </td>
+                        <td valign="top" align="right" nowrap>
+                            <a href="#" target="_blank"><span>619984</span></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">
+                            <b>Product(s) PLEASE CHECK:</b>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td valign="top">
+                            Viagra Soft 100mg x 4
+                        </td>
+                        <td valign="top" align="right" nowrap>
+                            0.00&nbsp;USD
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top">
+                            Viagra 150mg x 30
+                        </td>
+                        <td valign="top" align="right" nowrap>
+                            168.00&nbsp;USD
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top">
+                            <b>Shipping:</b>
+                        </td>
+                        <td valign="top" align="right" nowrap>
+                            30.00&nbsp;USD
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top">
+                            <b>Total Amount:</b>
+                        </td>
+                        <td valign="top" align="right" nowrap>
+                            <b>198.00&nbsp;USD</b>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <br/>
+            <h2>The order might get declined because of the following reasons:</h2>
+            <ul>
+                <li>Some data you entered on the Checkout page was wrong or not true.</li>
+                <li>Online purchases are not allowed in your bank account settings.</li>
+                <li>There was not enough money on your card to complete the purchase.</li>
+                <li>The card has expired or will expire soon.</li>
+            </ul>
+            <h2>To complete the purchase, please:</h2>
+            <ol>
+                <li>Some data you entered on the Checkout page was wrong or not true.</li>
+                <li>Online purchases are not allowed in your bank account settings.</li>
+                <li>There was not enough money on your card to complete the purchase.</li>
+                <li>The card has expired or will expire soon.</li>
+            </ol>
+            <p style="text-align:center;">&bull;&nbsp;&bull;&nbsp;&bull;</p>
+            <p style="text-align:center;">In case you have any questions or preferences, please, do not hesitate to contact our Customer Support Service. We are happy to help you any time 24/7/365. Kind regards, customer support.</p>
+            {% include "partials/signature.html" %}
+            <p style="text-align:center;">
+                Phone: +1-18556533218<br/> E-mail: <a href="mailto:support@example.com">support@example.com</a><br/> Website: <a href="http://example.com">example.com</a>
+            </p>
+        </column>
+    </row>
+    {% include "partials/footer.html" %}
+</wrapper>
+{% endblock %}

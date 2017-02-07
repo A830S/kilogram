@@ -1,0 +1,26 @@
+{% extends "extends/awsm.html" %} {% block content %}
+<wrapper size="600">
+    {% include "partials/header.html" %}
+    <row class="content">
+        <column>
+            <h2>What is it?</h2>
+            <p>Kilogram is a Gulp based workflow for easy and clean email development</p>
+            <center>
+                <button target="_blank" bgcolor="#f74d4a" color="#ffffff" radius="100px" href="http://google.com">Download Kilogram</button>
+            </center>
+            <p>Kilogram is the best choice for most responsive email templates. Code based on Fluid Method.</p>
+            <h2>Usage</h2>
+            <ul>
+                <li>Download Kilogram</li>
+                <li>Install dependencies via <span class="code">npm install</span></li>
+                <li>Go to project folder and run <span class="code">gulp</span></li>
+                <li>Have fun!</li>
+            </ul>
+            <h2>Why?</h2>
+            <p>I have to create simple pages in my daily work. Sometimes it's compiled Markdown and sometimes it's pure <abbr title="HyperText Markup Language is the standard markup language for creating web pages and web applications.">HTML</abbr> . I'd
+                like to make them more beautiful without additional classes, ids, etc. So I did it.
+            </p>
+        </column>
+    </row>
+</wrapper>
+{% endblock %}

@@ -1,0 +1,110 @@
+{% extends "extends/awsm.html" %} {% block content %}
+<wrapper size="600">
+    {% include "partials/header.html" %}
+    <row>
+        <column>
+            <h2>Headings</h2>
+            <p>Use the <span class="code">&lt;h1&gt;</span> to <span class="code">&lt;h4&gt;</span> elements to define your headings.</p>
+            <h1>h1 Heading 1</h1>
+            <h2>h2 Heading 2</h2>
+            <h3>h3 Heading 3</h3>
+            <h4>h4 Heading 4</h4>
+            <h2>Paragraphs</h2>
+            <p>The global font-size, line-height and regular margins between elements are set through variables, which can be customized. Paragraphs and other block elements stick to these values.</p>
+            <h2>Blockquotes</h2>
+            <blockquote>You received this email because fuck you. Eat shit.<br/><span class="caption">Arthur Koch</span></blockquote>
+            <h2>Text-level semantics</h2>
+            <table class="table">
+                    <tr>
+                        <th valign="top">Element</th>
+                        <th valign="top">Description</th>
+                    </tr>
+                    <tr>
+                        <td valign="top"><span class="code">&lt;a&gt;</span></td>
+                        <td valign="top">Turn text into hypertext using the <a href="#">a element</a>.</td>
+                    </tr>
+                    <tr>
+                        <td valign="top"><span class="code">&lt;em&gt;</span></td>
+                        <td valign="top">Emphasize text using the <em>em element</em>.</td>
+                    </tr>
+                    <tr>
+                        <td valign="top"><span class="code">&lt;strong&gt;</span></td>
+                        <td valign="top">Imply any extra importance using the <strong>strong element</strong>.</td>
+                    </tr>
+                    <tr>
+                        <td valign="top"><span class="code">&lt;code&gt;</span></td>
+                        <td valign="top">Define inline code snippets using the <span class="code">code element</span>.</td>
+                    </tr>
+                    <tr>
+                        <td valign="top"><span class="code">&lt;del&gt;</span></td>
+                        <td valign="top">Mark document changes as deleted text using the <del>del element</del>.</td>
+                    </tr>
+                    <tr>
+                        <td valign="top"><span class="code">&lt;ins&gt;</span></td>
+                        <td valign="top">Mark document changes as inserted text using the <ins>ins element</ins>.</td>
+                    </tr>
+                    <tr>
+                        <td valign="top"><span class="code">&lt;mark&gt;</span></td>
+                        <td valign="top">Highlight text with no semantic meaning using the <mark>mark element</mark>.</td>
+                    </tr>
+                    <tr>
+                        <td valign="top"><span class="code">&lt;q&gt;</span></td>
+                        <td valign="top">Define inline quotations using <q>q element <q>inside</q> a q element</q>.</td>
+                    </tr>
+                    <tr>
+                        <td valign="top"><span class="code">&lt;abbr&gt;</span></td>
+                        <td valign="top">Define an abbreviation using the <abbr title="Abbreviation Element">abbr element</abbr> with a title.</td>
+                    </tr>
+                    <tr>
+                        <td valign="top"><span class="code">&lt;dfn&gt;</span></td>
+                        <td valign="top">Define a definition term using the <dfn title="Defines a definition term">dfn element</dfn> with a title.</td>
+                    </tr>
+                    <tr>
+                        <td valign="top"><span class="code">&lt;small&gt;</span></td>
+                        <td valign="top">De-emphasize text for small print using the <small>small element</small>.</td>
+                    </tr>
+            </table>
+        </column>
+    </row>
+    <row>
+        <column>
+            <h2>Grid</h2>
+        </column>
+        <column class="col">
+            <container class="grid-bubble">
+                .col
+            </container>
+        </column>
+        <column class="col-50">
+            <container class="grid-bubble">
+                .col-50
+            </container>
+        </column>
+        <column class="col-50">
+            <container class="grid-bubble">
+                .col-50
+            </container>
+        </column>
+        <column class="col-33">
+            <container class="grid-bubble">
+                .col-33
+            </container>
+        </column>
+        <column class="col-66">
+            <container class="grid-bubble">
+                .col-66
+            </container>
+        </column>
+        <column class="col-25">
+            <container class="grid-bubble">
+                .col-25
+            </container>
+        </column>
+        <column class="col-75">
+            <container class="grid-bubble">
+                .col-75
+            </container>
+        </column>
+    </row>
+</wrapper>
+{% endblock %}

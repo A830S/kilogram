@@ -6,9 +6,9 @@ var notify = require("gulp-notify");
 var nunjucksRender = require('gulp-nunjucks-render');
 var plumber = require('gulp-plumber');
 var browserSync = require('browser-sync').get('sync');
-var typograf = require('gulp-typograf');
 var markdown = require('nunjucks-markdown');
 var marked = require('marked');
+var inky = require('inky');
 
 gulp.task('template', function() {
 	var env = nunjucksRender.nunjucks.configure([config.cwd], {
@@ -24,21 +24,10 @@ gulp.task('template', function() {
 			errorHandler: notify.onError("Error: <%= error.message %>")
 		}))
 		.pipe(nunjucksRender())
+		.pipe(inky())
 		.pipe(inlineCss({
-			removeLinkTags: true,
-			preserveMediaQueries: true,
-			xmlMode: true
+			removeLinkTags: false
 		}))
-        /*.pipe(typograf({
-            lang: 'ru',
-            mode: 'digit'
-        }))*/
-		/*.pipe(htmlmin({
-			minifyCSS: true,
-			collapseWhitespace: true,
-			processConditionalComments: false,
-			keepClosingSlash: true
-		}))*/
 		.pipe(notify({
 			title: 'Kilogram',
 			message: "Boooya! I'm done!",
